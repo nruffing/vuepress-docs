@@ -19,6 +19,7 @@
     "vue"
   ],
   "cSpell.words": [
+    "commitlint",
     "composables",
     "devtool",
     "docsearch",

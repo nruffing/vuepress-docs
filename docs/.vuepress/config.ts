@@ -191,7 +191,10 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
-    // only enable shiki plugin in production mode
-    isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],
+    shikiPlugin({
+      lightTheme: 'light-plus',
+      darkTheme: 'dark-plus',
+      langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff'],
+    }),
   ],
 })
